@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Source PDFs (keep in repo but not needed for site)
+# *.pdf

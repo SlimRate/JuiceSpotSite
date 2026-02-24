@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Juice Spot — Fresh Juices & Wellness | Fort Lauderdale</title>
+    <meta name="description" content="The Juice Spot — 100% natural cold-pressed juices, smoothies, cleanses crafted by a registered nurse. No added sugar, no preservatives. Fort Lauderdale, FL.">
+    <meta name="keywords" content="juice, cold-pressed, wellness, Fort Lauderdale, Deerfield Beach, Pompano Beach, cleanse, detox, natural">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo_0.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="assets/images/logo_0.png" alt="Loading..." class="loader-logo">
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Free Guide Popup -->
+    <div id="guide-popup" class="popup-overlay">
+        <div class="popup-content" data-aos="zoom-in">
+            <button class="popup-close" aria-label="Close">&times;</button>
+            <div class="popup-icon">🍃</div>
+            <h3>Get Your <span class="highlight">FREE</span> Juicing Guide!</h3>
+            <p>Discover the power of natural juicing — tips, recipes & wellness secrets from The Juice Spot.</p>
+            <form id="guide-form" class="popup-form">
+                <input type="email" placeholder="Your email address" required>
+                <input type="tel" placeholder="Phone number (optional)">
+                <button type="submit" class="btn btn-primary">Send Me the Guide <i class="fas fa-arrow-right"></i></button>
+            </form>
+            <p class="popup-disclaimer">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/images/logo_0.png" alt="The Juice Spot">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#juices" class="nav-link">Our Juices</a></li>
+                <li><a href="#cleanses" class="nav-link">Cleanses</a></li>
+                <li><a href="#locations" class="nav-link">Locations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#juices" class="btn btn-nav">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <span class="hero-badge">100% Natural &bull; No Added Sugar &bull; No Preservatives</span>
+                <h1>Where <span class="text-gradient">Freshness</span> Meets <span class="text-gradient">Wellness</span></h1>
+                <p class="hero-subtitle">Handcrafted cold-pressed juices made with love by a registered nurse. Every bottle delivers nature's best — from our kitchen to yours.</p>
+                <div class="hero-actions">
+                    <a href="#juices" class="btn btn-primary btn-lg">Explore Our Juices <i class="fas fa-leaf"></i></a>
+                    <a href="#about" class="btn btn-outline btn-lg">Our Story</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Unique Juices</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Natural</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Preservatives</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/hero-whatsapp.jpg" alt="The Juice Spot fresh juices" class="hero-image">
+                    <div class="hero-float-badge top-badge">
+                        <i class="fas fa-heart"></i> Nurse Owned
+                    </div>
+                    <div class="hero-float-badge bottom-badge">
+                        <i class="fas fa-seedling"></i> Made Fresh Daily
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Story</span>
+                <h2>Crafted With <span class="text-gradient">Purpose</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <h3>🍃 Welcome to The Juice Spot</h3>
+                    <p>At The Juice Spot, we believe that true health starts from the inside out. What began as a personal wellness routine — blending and juicing fruits and vegetables for better energy, balance, and vitality — has grown into a passion-filled mission to share the power of natural nourishment with our community.</p>
+                    <p>Founded by a <strong>registered nurse</strong> who understands the deep connection between what we consume and how we feel, The Juice Spot is more than a juice bar — it's a <strong>wellness experience</strong>.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <h4>100% Natural</h4>
+                                <p>No fillers, no junk, just plants.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-user-nurse"></i></div>
+                            <div>
+                                <h4>Nurse Owned</h4>
+                                <p>Crafted with wellness expertise.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Fresh Daily</h4>
+                                <p>Fruits + veggies juiced at peak ripeness.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                            <div>
+                                <h4>No Shortcuts</h4>
+                                <p>No added sugars, no preservatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="about-image-card">
+                        <img src="assets/images/logo_page_full.png" alt="The Juice Spot Logo" class="about-img">
+                    </div>
+                    <blockquote class="about-quote">
+                        <p>"We don't just make juice — we make wellness taste amazing."</p>
+                        <cite>— The Juice Spot</cite>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Why Juicing -->
+            <div class="why-juicing" data-aos="fade-up">
+                <h3>🌿 Why We Believe in Juicing</h3>
+                <p class="why-text">Juicing is one of the simplest ways to flood your body with the vitamins, minerals, and antioxidants it craves. When you drink fresh, cold-pressed juice, your body absorbs nutrients faster and more efficiently — giving you an instant boost without the crash.</p>
+                <div class="benefits-grid">
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="benefit-icon">⚡</div>
+                        <h4>Supercharged Nutrition</h4>
+                        <p>One juice can pack the nutrition of several servings of fruits & veggies.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-icon">🔋</div>
+                        <h4>Natural Energy</h4>
+                        <p>No crash, just clean fuel from nature.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-icon">🧹</div>
+                        <h4>Detox & Cleanse</h4>
+                        <p>Supports digestion, liver health, and natural cleansing.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="benefit-icon">💧</div>
+                        <h4>Better Hydration</h4>
+                        <p>Electrolytes that hydrate better than plain water.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="benefit-icon">🛡️</div>
+                        <h4>Immune Support</h4>
+                        <p>Vitamin C, antioxidants, and plant compounds strengthen defenses.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="benefit-icon">✨</div>
+                        <h4>Glowing Skin</h4>
+                        <p>Hydration, minerals, and antioxidants your skin loves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juices Catalog -->
+    <section id="juices" class="section juices">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Menu</span>
+                <h2>Made Fresh <span class="text-gradient">Daily</span></h2>
+                <p class="section-desc">No Added Water &bull; No Added Sugar &bull; Every bottle crafted with purpose</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="juice-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Juices</button>
+                <button class="filter-btn" data-filter="green">Greens</button>
+                <button class="filter-btn" data-filter="fruit">Fruity</button>
+                <button class="filter-btn" data-filter="detox">Detox</button>
+                <button class="filter-btn" data-filter="hydration">Hydration</button>
+            </div>
+
+            <!-- Juice Grid -->
+            <div class="juice-grid">
+                <!-- Red Multi Booster -->
+                <div class="juice-card" data-category="detox fruit" data-aos="fade-up">
+                    <div class="juice-card-image juice-red">
+                        <img src="assets/images/red multi boost pic .jpg" alt="Red Multi Booster">
+                        <span class="juice-emoji">🩸</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Red Multi Booster</h3>
+                        <p class="juice-tagline">Fuel your flow with nature's power punch.</p>
+                        <p class="juice-desc">Beet, carrot, apple, lemon, turmeric, and ginger come together to energize your body and support natural detoxification. Packed with antioxidants and anti-inflammatory benefits.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Beet</span>
+                            <span class="ingredient">Carrot</span>
+                            <span class="ingredient">Apple</span>
+                            <span class="ingredient">Lemon</span>
+                            <span class="ingredient">Turmeric</span>
+                            <span class="ingredient">Ginger</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-bolt"></i> Energy</span>
+                            <span><i class="fas fa-heart"></i> Circulation</span>
+                            <span><i class="fas fa-spa"></i> Skin</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                        <button class="btn btn-juice" onclick="openNutrition('Red multi nutritional label .jpg')">
+                            <i class="fas fa-info-circle"></i> Nutrition Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Golden Boost -->
+                <div class="juice-card" data-category="fruit" data-aos="fade-up" data-aos-delay="100">
+                    <div class="juice-card-image juice-gold">
+                        <img src="assets/images/golden boost .jpg" alt="Golden Boost">
+                        <span class="juice-emoji">🟡</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Golden Boost</h3>
+                        <p class="juice-tagline">Sip sunshine. Glow from the inside out.</p>
+                        <p class="juice-desc">A bright and balanced mix of orange, carrot, apple, lemon, and turmeric. Naturally high in vitamin C and antioxidants, this juice strengthens immunity and fights inflammation.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Orange</span>
+                            <span class="ingredient">Carrot</span>
+                            <span class="ingredient">Apple</span>
+                            <span class="ingredient">Lemon</span>
+                            <span class="ingredient">Turmeric</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-shield-alt"></i> Immunity</span>
+                            <span><i class="fas fa-fire"></i> Anti-inflammatory</span>
+                            <span><i class="fas fa-sun"></i> Vitality</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                        <button class="btn btn-juice" onclick="openNutrition('Golden boost nutritional label.jpg')">
+                            <i class="fas fa-info-circle"></i> Nutrition Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Green Energy -->
+                <div class="juice-card" data-category="green" data-aos="fade-up" data-aos-delay="200">
+                    <div class="juice-card-image juice-green">
+                        <img src="assets/images/Green Energy .jpg" alt="Green Energy">
+                        <span class="juice-emoji">💚</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Green Energy</h3>
+                        <p class="juice-tagline">Clean energy. No crash. Just refresh.</p>
+                        <p class="juice-desc">This crisp green favorite blends pineapple, celery, cucumber, lime, mint, and ginger for a hydrating, alkalizing boost. Supports digestion and helps reduce bloating.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Pineapple</span>
+                            <span class="ingredient">Celery</span>
+                            <span class="ingredient">Cucumber</span>
+                            <span class="ingredient">Lime</span>
+                            <span class="ingredient">Mint</span>
+                            <span class="ingredient">Ginger</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-bolt"></i> Energy</span>
+                            <span><i class="fas fa-tint"></i> Hydration</span>
+                            <span><i class="fas fa-leaf"></i> Digestion</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                        <button class="btn btn-juice" onclick="openNutrition('Green energy nutritional label .jpg')">
+                            <i class="fas fa-info-circle"></i> Nutrition Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Melon-Ade -->
+                <div class="juice-card" data-category="fruit hydration" data-aos="fade-up">
+                    <div class="juice-card-image juice-coral">
+                        <img src="assets/images/hero-whatsapp.jpg" alt="Melon-Ade">
+                        <span class="juice-emoji">🍉</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Melon-Ade</h3>
+                        <p class="juice-tagline">Summer in a sip — fresh, sweet, and heart-healthy.</p>
+                        <p class="juice-desc">A refreshing mix of watermelon, strawberry, and a dash of cinnamon. Light, juicy, and hydrating — helps lower inflammation and supports heart health.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Watermelon</span>
+                            <span class="ingredient">Strawberry</span>
+                            <span class="ingredient">Cinnamon</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-heart"></i> Heart Health</span>
+                            <span><i class="fas fa-tint"></i> Hydration</span>
+                            <span><i class="fas fa-fire"></i> Anti-inflammatory</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Refresher -->
+                <div class="juice-card" data-category="green detox" data-aos="fade-up" data-aos-delay="100">
+                    <div class="juice-card-image juice-lime">
+                        <img src="assets/images/Power refresher.jpg" alt="Power Refresher">
+                        <span class="juice-emoji">🥬</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Power Refresher</h3>
+                        <p class="juice-tagline">Green power that keeps you glowing.</p>
+                        <p class="juice-desc">Spinach, cucumber, celery, pineapple, lemon, and ginger unite in this rejuvenating green blend. Rich in vitamins, iron, and antioxidants.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Spinach</span>
+                            <span class="ingredient">Cucumber</span>
+                            <span class="ingredient">Celery</span>
+                            <span class="ingredient">Pineapple</span>
+                            <span class="ingredient">Lemon</span>
+                            <span class="ingredient">Ginger</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-dumbbell"></i> Metabolism</span>
+                            <span><i class="fas fa-leaf"></i> Alkalizing</span>
+                            <span><i class="fas fa-spa"></i> Rejuvenating</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Happy Belly -->
+                <div class="juice-card" data-category="detox" data-aos="fade-up" data-aos-delay="200">
+                    <div class="juice-card-image juice-yellow">
+                        <img src="assets/images/golden boost .jpg" alt="Happy Belly">
+                        <span class="juice-emoji">🍍</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Happy Belly</h3>
+                        <p class="juice-tagline">Gut love in every pour.</p>
+                        <p class="juice-desc">A soothing blend of papaya, pineapple, celery, cucumber, and lime — crafted to support digestion and gut health. Papaya enzymes and pineapple bromelain help cleanse the digestive tract.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Papaya</span>
+                            <span class="ingredient">Pineapple</span>
+                            <span class="ingredient">Celery</span>
+                            <span class="ingredient">Cucumber</span>
+                            <span class="ingredient">Lime</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-leaf"></i> Digestion</span>
+                            <span><i class="fas fa-heart"></i> Gut Health</span>
+                            <span><i class="fas fa-tint"></i> Hydrating</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size-special">Half Gallon</span>
+                            <span class="size-special">Gallon Only</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blue Glow -->
+                <div class="juice-card" data-category="hydration" data-aos="fade-up">
+                    <div class="juice-card-image juice-blue">
+                        <img src="assets/images/Blue glow.jpg" alt="Blue Glow">
+                        <span class="juice-emoji">💙</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Blue Glow</h3>
+                        <p class="juice-tagline">Glow blue, feel brand new.</p>
+                        <p class="juice-desc">Honeydew, cucumber, green apple, lime, and blue spirulina blend into a light, mineral-rich tonic. Packed with antioxidants and plant protein.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Honeydew</span>
+                            <span class="ingredient">Cucumber</span>
+                            <span class="ingredient">Green Apple</span>
+                            <span class="ingredient">Lime</span>
+                            <span class="ingredient">Blue Spirulina</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-spa"></i> Skin</span>
+                            <span><i class="fas fa-tint"></i> Hydration</span>
+                            <span><i class="fas fa-shield-alt"></i> Antioxidants</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                        <button class="btn btn-juice" onclick="openNutrition('blue glow nutritional label .jpg')">
+                            <i class="fas fa-info-circle"></i> Nutrition Info
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kale Bliss -->
+                <div class="juice-card" data-category="green detox" data-aos="fade-up" data-aos-delay="100">
+                    <div class="juice-card-image juice-purple">
+                        <img src="assets/images/Green Energy .jpg" alt="Kale Bliss">
+                        <span class="juice-emoji">🥗</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Kale Bliss</h3>
+                        <p class="juice-tagline">Bliss in a bottle — bold, bright, and nourishing.</p>
+                        <p class="juice-desc">A vibrant mix of red grapes, red cabbage, kale, and lime. This antioxidant-packed juice promotes heart health, supports digestion, and helps your body cleanse naturally.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Red Grapes</span>
+                            <span class="ingredient">Red Cabbage</span>
+                            <span class="ingredient">Kale</span>
+                            <span class="ingredient">Lime</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-heart"></i> Heart Health</span>
+                            <span><i class="fas fa-leaf"></i> Digestion</span>
+                            <span><i class="fas fa-recycle"></i> Cleanse</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Green Beauty Blend -->
+                <div class="juice-card" data-category="green detox" data-aos="fade-up" data-aos-delay="200">
+                    <div class="juice-card-image juice-teal">
+                        <img src="assets/images/Power refresher.jpg" alt="Green Beauty Blend">
+                        <span class="juice-emoji">🌿</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Green Beauty Blend</h3>
+                        <p class="juice-tagline">Beauty starts in your greens.</p>
+                        <p class="juice-desc">A deep-green medley of red grapes, spinach, kale, parsley, and romaine lettuce. High in chlorophyll and essential vitamins, this blend promotes radiant skin and detoxification.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Red Grapes</span>
+                            <span class="ingredient">Spinach</span>
+                            <span class="ingredient">Kale</span>
+                            <span class="ingredient">Parsley</span>
+                            <span class="ingredient">Romaine</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-spa"></i> Radiant Skin</span>
+                            <span><i class="fas fa-recycle"></i> Detox</span>
+                            <span><i class="fas fa-heart"></i> Vitality</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hydration Boost -->
+                <div class="juice-card" data-category="hydration" data-aos="fade-up">
+                    <div class="juice-card-image juice-aqua">
+                        <img src="assets/images/Hydration Boost _Golden boost _20260210_16351120.jpg" alt="Hydration Boost">
+                        <span class="juice-emoji">💧</span>
+                    </div>
+                    <div class="juice-card-body">
+                        <h3>Hydration Boost</h3>
+                        <p class="juice-tagline">Hydration done the natural way.</p>
+                        <p class="juice-desc">Honeydew, cantaloupe, lemon, and a touch of Celtic sea salt combine to restore balance and electrolytes. Perfect for all-day hydration or post-workout recovery.</p>
+                        <div class="juice-ingredients">
+                            <span class="ingredient">Honeydew</span>
+                            <span class="ingredient">Cantaloupe</span>
+                            <span class="ingredient">Lemon</span>
+                            <span class="ingredient">Celtic Sea Salt</span>
+                        </div>
+                        <div class="juice-benefits">
+                            <span><i class="fas fa-tint"></i> Electrolytes</span>
+                            <span><i class="fas fa-running"></i> Recovery</span>
+                            <span><i class="fas fa-battery-full"></i> Revitalizing</span>
+                        </div>
+                        <div class="juice-sizes">
+                            <span class="size">16oz</span>
+                            <span class="size">Half Gallon</span>
+                            <span class="size">Gallon</span>
+                        </div>
+                        <button class="btn btn-juice" onclick="openNutrition('Hydration Boost nutritonal label .jpg')">
+                            <i class="fas fa-info-circle"></i> Nutrition Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="juice-note" data-aos="fade-up">
+                <p><i class="fas fa-info-circle"></i> Individual juices sold in 16oz bottles, Half Gallon, and Gallon sizes. Orders available for pick up at our Deerfield Beach or Pompano Beach (The Produce Spot) locations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Modal -->
+    <div id="nutritionModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeNutrition()">&times;</button>
+            <img id="nutritionImage" src="" alt="Nutritional Information">
+        </div>
+    </div>
+
+    <!-- Cleanses Section -->
+    <section id="cleanses" class="section cleanses">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Reset &bull; Recharge &bull; Rebalance</span>
+                <h2>Juice <span class="text-gradient">Cleanses</span></h2>
+                <p class="section-desc">Give your body a break while flooding it with nutrients. Each cleanse includes our signature juices, special cleanse blends, and wellness shots.</p>
+            </div>
+
+            <div class="cleanse-grid">
+                <div class="cleanse-card" data-aos="fade-up">
+                    <div class="cleanse-header">
+                        <span class="cleanse-badge">Starter</span>
+                        <h3>1-Day Cleanse</h3>
+                    </div>
+                    <div class="cleanse-body">
+                        <p>A perfect introduction to juicing or a quick reset for your body.</p>
+                        <div class="cleanse-schedule">
+                            <div class="schedule-item"><span class="time">9 AM</span><span class="juice-name">Spicy Lemonade</span><small>Wake up your metabolism</small></div>
+                            <div class="schedule-item"><span class="time">11 AM</span><span class="juice-name">Green Energy</span><small>Clean energy boost</small></div>
+                            <div class="schedule-item"><span class="time">1 PM</span><span class="juice-name">Golden Boost</span><small>Immunity & glow</small></div>
+                            <div class="schedule-item"><span class="time">3 PM</span><span class="juice-name">Kale Bliss</span><small>Antioxidant power</small></div>
+                            <div class="schedule-item"><span class="time">5 PM</span><span class="juice-name">Blue Glow</span><small>Mineral-rich hydration</small></div>
+                            <div class="schedule-item"><span class="time">7 PM</span><span class="juice-name">Happy Belly</span><small>Gut love to close</small></div>
+                        </div>
+                        <p class="cleanse-note"><i class="fas fa-clock"></i> Order 24 hrs in advance</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-block">Start Your Cleanse</a>
+                </div>
+
+                <div class="cleanse-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cleanse-header">
+                        <span class="cleanse-badge">Most Popular</span>
+                        <h3>3-Day Cleanse</h3>
+                    </div>
+                    <div class="cleanse-body">
+                        <p>A deeper reset — restore digestion, reduce inflammation, and boost energy over three nourishing days.</p>
+                        <ul class="cleanse-benefits-list">
+                            <li><i class="fas fa-check"></i> Signature juice lineup daily</li>
+                            <li><i class="fas fa-check"></i> Special cleanse blends</li>
+                            <li><i class="fas fa-check"></i> Wellness shots included</li>
+                            <li><i class="fas fa-check"></i> Optional non-dairy milks</li>
+                            <li><i class="fas fa-check"></i> Personalized schedule</li>
+                        </ul>
+                        <p class="cleanse-note"><i class="fas fa-clock"></i> Order 72 hrs in advance</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-block">Start Your Cleanse</a>
+                </div>
+
+                <div class="cleanse-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cleanse-header">
+                        <span class="cleanse-badge">Ultimate</span>
+                        <h3>5-Day Cleanse</h3>
+                    </div>
+                    <div class="cleanse-body">
+                        <p>The full-body reset — maximum detoxification, hydration, and leaving you feeling lighter and more energized.</p>
+                        <ul class="cleanse-benefits-list">
+                            <li><i class="fas fa-check"></i> Full 5-day juice program</li>
+                            <li><i class="fas fa-check"></i> Special cleanse blends</li>
+                            <li><i class="fas fa-check"></i> Daily wellness shots</li>
+                            <li><i class="fas fa-check"></i> Non-dairy milk add-ons</li>
+                            <li><i class="fas fa-check"></i> Personalized support</li>
+                            <li><i class="fas fa-check"></i> Complete body reset</li>
+                        </ul>
+                        <p class="cleanse-note"><i class="fas fa-clock"></i> Order 72 hrs in advance</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-block">Start Your Cleanse</a>
+                </div>
+            </div>
+
+            <div class="cleanse-disclaimer" data-aos="fade-up">
+                <p><strong>Disclaimer:</strong> The Juice Spot's juice cleanses are intended to support wellness, not to diagnose, treat, cure, or prevent any disease. Before starting any cleanse, please consult with your physician — especially if you are pregnant, nursing, have a medical condition, or take medication. Results may vary.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section locations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Find Us</span>
+                <h2>Pick Up <span class="text-gradient">Locations</span></h2>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card" data-aos="fade-up">
+                    <div class="location-icon"><i class="fas fa-store"></i></div>
+                    <h3>Main Location</h3>
+                    <p class="location-area">Deerfield Beach, FL</p>
+                    <p>Our primary kitchen and pick-up point — where the magic happens every day.</p>
+                    <a href="#contact" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+                <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="location-icon"><i class="fas fa-apple-alt"></i></div>
+                    <h3>The Produce Spot</h3>
+                    <p class="location-area">Pompano Beach, FL</p>
+                    <p>Our second pick-up location for easy access to your fresh juices.</p>
+                    <a href="#contact" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Connect <span class="text-gradient">With Us</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>We'd Love to Hear From You</h3>
+                    <p>Whether you have a question about our juices, want to start a cleanse, or just want to say hello — reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:info@TheJuiceSpot.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@TheJuiceSpot.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="socials">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="mission-reminder">
+                        <blockquote>
+                            <p>"To make wellness simple, accessible, and delicious for everyone."</p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a topic</option>
+                                <option value="order">Place an Order</option>
+                                <option value="cleanse">Juice Cleanse Inquiry</option>
+                                <option value="catering">Catering / Events</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C360,100 720,0 1080,60 C1260,80 1380,40 1440,40 L1440,0 L0,0 Z" fill="var(--bg-primary)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo_0.png" alt="The Juice Spot" class="footer-logo">
+                    <p>Where Freshness Meets Wellness</p>
+                    <p class="footer-tagline">Simple. Delicious. Healthful.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#juices">Our Juices</a></li>
+                        <li><a href="#cleanses">Cleanses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="#locations">Deerfield Beach, FL</a></li>
+                        <li><a href="#locations">Pompano Beach, FL</a></li>
+                    </ul>
+                    <h4 class="mt-1-5">Hours</h4>
+                    <p>Orders by appointment<br>Pick-up scheduling available</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Stay Connected</h4>
+                    <div class="socials">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <a href="mailto:info@TheJuiceSpot.com" class="footer-email">info@TheJuiceSpot.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Juice Spot. All rights reserved.</p>
+                <p class="footer-wellness">🌿 Stay nourished. Stay informed. Stay vibrant.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
