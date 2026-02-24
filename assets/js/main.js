@@ -28,6 +28,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4000);
 
     // === Navigation ===
+
+    // === Hero Carousel ===
+    const slides = document.querySelectorAll('.hero-slide');
+    const dotsContainer = document.querySelector('.hero-carousel-dots');
+    let currentSlide = 0;
+    let carouselInterval;
+
+    if (slides.length > 0 && dotsContainer) {
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.setAttribute('aria-label', `Slide ${i + 1}`);
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll('.dot');
+
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        carouselInterval = setInterval(nextSlide, 3500);
+
+        // Pause on hover
+        const carousel = document.querySelector('.hero-carousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+        carousel.addEventListener('mouseleave', () => {
+            carouselInterval = setInterval(nextSlide, 3500);
+        });
+    }
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');

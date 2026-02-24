@@ -462,6 +462,53 @@ ul { list-style: none; }
     max-width: 480px;
 }
 
+/* Hero Carousel */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    aspect-ratio: 4/5;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.hero-carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+}
+
+.hero-carousel-dots .dot.active {
+    background: var(--green-primary);
+    transform: scale(1.2);
+}
+
 .hero-image {
     width: 100%;
     border-radius: var(--radius-xl);
@@ -642,8 +689,8 @@ ul { list-style: none; }
 
 .about-img {
     width: 100%;
-    object-fit: contain;
-    background: var(--white);
+    object-fit: cover;
+    aspect-ratio: 4/3;
 }
 
 .about-quote {
