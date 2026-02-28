@@ -1800,7 +1800,7 @@ ul { list-style: none; }
     .hero {
         min-height: 0;
         padding-top: 70px;
-        padding-bottom: 0;
+        padding-bottom: 50px;
     }
     
     .hero-content {
@@ -1852,7 +1852,7 @@ ul { list-style: none; }
     }
     
     .hero-wave svg {
-        height: 40px;
+        height: 35px;
     }
 
     /* Disable horizontal AOS on mobile to prevent overflow */
@@ -2006,6 +2006,10 @@ ul { list-style: none; }
     
     .hero-carousel {
         aspect-ratio: 3/4;
+    }
+    
+    .hero-wave svg {
+        height: 28px;
     }
     
     .hero-stats { gap: 1rem; }
