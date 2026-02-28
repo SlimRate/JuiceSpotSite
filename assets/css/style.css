@@ -1837,7 +1837,26 @@ ul { list-style: none; }
         height: 8px;
     }
     
-    .hero-float-badge { display: none; }
+    .hero-float-badge {
+        position: static;
+        animation: none;
+        font-size: 0.75rem;
+        padding: 0.45rem 0.85rem;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .hero-image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-badges-row {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+    }
     
     .hero-stats {
         gap: 1.5rem;
